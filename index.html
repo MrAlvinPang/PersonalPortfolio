@@ -11,9 +11,27 @@
     <title>Alvin Pang</title>
   </head>
 
-  <body class="bg-light">
+  <body class="bg-light pt-5">
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+      <symbol id="icon-phone" viewBox="0 0 32 32">
+      <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+      </symbol>
+      <symbol id="icon-envelop" viewBox="0 0 32 32">
+      <path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 32 32">
+      <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 32 32">
+      <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"></path>
+      </symbol>
+      </defs>
+      </svg>
+
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <a class="navbar-brand" href="#">
           Home
         </a>
@@ -23,16 +41,16 @@
         <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -47,7 +65,7 @@
       </div>
     </section>
 
-    <section class="about-me text-center pl-3 pr-3 mb-5">
+    <section class="about-me text-center pl-3 pr-3 mb-5" id="about">
       <h2 class="text-info">Hey! I'm Alvin</h2>
       <p class="mb-4">
         I'm an Edmonton based developer with a strong passion working on frontend development, and UX/UI. If I'm not developing and creating projects to practice my skills, you'll often find me out fishing with friends, admiring old japanese cars online, or playing through an intense session of Dungeons and Dragons!
@@ -57,7 +75,7 @@
       </p>
     </section>
 
-    <section class="projects text-center bg-white pt-5">
+    <section class="projects text-center bg-white pt-5" id="projects">
       <h2 class="text-success">My Work</h2>
       <p>
         Here are a few projects I have completed on my own time, and during my studies at NAIT.
@@ -77,7 +95,7 @@
 						<button type="button" class="btn btn-outline-success my-3" onclick="bootStrapDemoLink('https://mralvinpang.github.io/BootstrapDemo/')">Lets Go!</button>
 					</div>
 	
-					<div class="container p-0 border border-secondary rounded text-center bg-white mb-3 col-md-3 pt-3">
+					<div class="container p-0 border border-secondary rounded text-center bg-white mb-3 col-md-3 pt-3 mb-5">
 						<h3>Todo Application</h3>
 						<p class="pb-3 h6">A simple todo list using Javascript and Node</p>
 						<button type="button" class="btn btn-outline-success my-3" onclick="toDoListLink('https://todolist-nu-rose.vercel.app/')">Lets Go!</button>
@@ -86,11 +104,30 @@
 			</div>
     </section>
 
-    <section class="contact">
+    <section class="contact text-center mt-5" id="contact">
+      <h2 class="text-primary">Message Me!</h2>
+      <p>Feel free to email or call me. I've also listed some links below if you'd like to see more from me.</p>
 
+      <div class="mb-3">
+        <svg class="icon icon-phone mr-2" style="fill:darkslategrey; width: 1.5rem; height: 1.5rem;"><use xlink:href="#icon-phone"></use></svg><span class="lead">587-708-4829</span><br/>
+      </div>
+
+      <div class="mb-3">
+        <svg class="icon icon-envelop mr-2 mb-2" style="fill:darkslategrey; width: 1.5rem; height:1.5rem;"><use xlink:href="#icon-envelop"></use></svg><span class="name">alvinpang182@gmail.com</span><br/>
+      </div>
+
+      <div class="mb-3">
+        <svg class="icon icon-github mr-2" style="fill:darkslategrey; width: 1.5rem; height:1.5rem;"><use xlink:href="#icon-github"></use></svg><a href="https://www.github.com/MrAlvinPang" class="text-dark">github.com/MrAlvinPang</a><br/>
+      </div>
+
+      <div class="mb-3">
+        <svg class="icon icon-linkedin mr-2" style="fill:darkslategrey; width: 1.5rem; height:1.5rem;"><use xlink:href="#icon-linkedin"></use></svg><a href="https://www.linkedin.com/MrAlvinPang" class="text-dark">linkedin.com/MrAlvinPang</a>
+      </div>
     </section>
 
-
+    <footer class="footer text-center mt-5 bg-primary py-1">
+      <p class="text-white">Made by Alvin Pang</p>
+    </footer>
 
 
 
@@ -98,5 +135,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script defer src="svgxuse.js"></script>
   </body>
 </html>
